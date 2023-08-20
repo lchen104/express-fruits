@@ -9,9 +9,9 @@ function Index ({fruits}) {
             fruits.map((fruit, i) => {
               return (
                   <li key={i}>
-                      <a href={`/fruits/${i}`}>{fruit.name}</a>&nbsp;is {fruit.color} <br/>
+                      The <a href={`/fruits/${i}`}>{fruit.name}</a> is {fruit.color} <br/>
                       and
-                      {fruit.readyToEat ? `It is ready to eat` : `It is not ready to eat`}
+                      {fruit.readyToEat ? `It is ready to be eaten. Yummy.` : `It is not ready to be eaten!`}
                     
                   </li>
               );
