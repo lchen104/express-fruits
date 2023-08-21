@@ -3,7 +3,10 @@ import React from 'react'
 function Index ({veggies}) {
   return (
     <div>
-      <h1>Fruits Index Page</h1>
+      <h1>Veggies Index Page</h1>
+      <nav>
+          <a href="/veggies/new">Create a New Veggie</a>
+      </nav>      
       <ul>
           {
             veggies.map((veggie, i) => {

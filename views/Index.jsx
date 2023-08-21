@@ -1,25 +1,15 @@
 import React from 'react'
 
-function Index ({fruits}) {
+const Index = () => {
   return (
     <div>
-      <h1>Fruits Index Page</h1>
-      <ul>
-          {
-            fruits.map((fruit, i) => {
-              return (
-                  <li key={i}>
-                      The <a href={`/fruits/${i}`}>{fruit.name}</a> is {fruit.color} <br/>
-                      and
-                      {fruit.readyToEat ? `It is ready to be eaten. Yummy.` : `It is not ready to be eaten!`}
-                    
-                  </li>
-              );
-            })
-          }
-      </ul>
+        <h1>Index Page</h1>
+        <nav>
+            <a href="/fruits">List Fruit</a><br />
+            <a href="/veggies">List Veggies</a>
+        </nav>
     </div>
   )
 }
 
-module.exports = Index;
+module.exports = Index
